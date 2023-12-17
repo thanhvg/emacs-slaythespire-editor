@@ -1,0 +1,12 @@
+#+STARTUP:    align fold hidestars oddeven indent 
+#+TITLE: Emacs Slay the Spire Editor
+
+[[http://spacemacs.org][file:https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg]]
+
+* Intro
+This package allows to edit the save files of the game Slay the Spire (https://www.megacrit.com/).
+* Usage
+`slaythespire-open-save-file` to open a save file such as `~/GOG Games/Slay the Spire/game/saves/THE_SILENT.autosave`. The content of the file will be decrypted and showed in a json format in an asterisk buffer `*THE_SILENT.autosave*`. The contents of the json data are self explanatory to those who are familiar with the game. Edit this buffer to your liking, commit the change to the corresponding save file with `slaythespire-save (C-c C-c)` or reload the from the save file with `slaythespire-reload (C-c C-r)`.
+* Acknowledgements
+- https://github.com/jason-kane/slaythespire-editor for encryption logic
+
