@@ -42,12 +42,14 @@
   (interactive)
   (let ((str (buffer-string)))
     (with-temp-file slaythespire--save-file
-      (insert (slaythespire--encode str)))))
+      (insert (slaythespire--encode str))))
+  (message "Change has been saved to %s" slaythespire--save-file))
 
 (defun slaythespire-reload ()
   "Reload change from save file."
   (interactive)
-  (slaythespire-open-save-file slaythespire--save-file))
+  (slaythespire-open-save-file slaythespire--save-file)
+  (message "Reloaded data from %s" slaythespire--save-file))
 
 (define-minor-mode slaythespire-mode
   "Minor mode for Slay The Spire editor."
