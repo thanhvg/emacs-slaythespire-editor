@@ -14,5 +14,4 @@ Tested on the version V2.2 [12-13-2020]
 
 [[file:imgs/game.png]]
 * Acknowledgements
-- https://github.com/jason-kane/slaythespire-editor for encryption logic
-
+- https://github.com/jason-kane/slaythespire-editor for encryption/decryption logic.
