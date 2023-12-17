@@ -1,3 +1,39 @@
+;;; slaythespire.el -- A pacakge to edit Slay the Spire save files -*- lexical-binding: t; -*-
+
+;; Copyright (C) 2023  Thanh Vuong
+
+;; Author: Thanh Vuong <thanhvg@gmail.com>
+;; URL: https://github.com/thanhvg/emacs-slaythespire-editor
+;; Package-Requires: ((emacs "28.1") (json "1.4")) 
+;; Version: 0.0.1
+
+;; This program is free software; you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
+
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+;;; Commentary:
+;; This package can edit Slay the Spire save files.
+;; an org buffer. Almost everything works. Features that are not supported are
+;; account related features. You cannot add comment, downvote or upvote.
+
+;;; Dependencies
+;;  emacs 28 and later
+
+;;; Commands
+;; slaythespire-open-save-file: open save file and show its decryption in a json buffer
+;; slaythespire-save (C-c C-c): save the current json buffer to the save file.
+;; slaythespire-reload (C-c C-r): reload the save file into the current json buffer.
+
+
 (require 'json)
 
 (defvar slaythespire-key "key"
