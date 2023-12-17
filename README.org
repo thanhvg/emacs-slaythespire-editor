@@ -5,8 +5,14 @@
 
 * Intro
 This package allows to edit the save files of the game Slay the Spire (https://www.megacrit.com/).
+
+[[file:imgs/package.png]]
 * Usage
 `slaythespire-open-save-file` to open a save file such as `~/GOG Games/Slay the Spire/game/saves/THE_SILENT.autosave`. The content of the file will be decrypted and showed in a json format in an asterisk buffer `*THE_SILENT.autosave*`. The contents of the json data are self explanatory to those who are familiar with the game. Edit this buffer to your liking, commit the change to the corresponding save file with `slaythespire-save (C-c C-c)` or reload the from the save file with `slaythespire-reload (C-c C-r)`.
+* Note
+Tested on the version V2.2 [12-13-2020]
+
+[[file:imgs/game.png]]
 * Acknowledgements
 - https://github.com/jason-kane/slaythespire-editor for encryption logic
 
